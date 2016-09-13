@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebGL First step</title>
+  <style type="text/css">
+    html, body {
+      /* get rid of default spacing on the edges */
+      /*margin: 0;*/
+      /*padding: 0;*/
+
+      /* get rid of that 2px window border in Internet Explorer 6 */
+      border: 0;
+
+      /* fill the height of the browser */
+      height: 100%;
+
+      /* no more scroll bar */
+      overflow: hidden;
+      }
+
+    canvas {
+      /*width: 100%;*/
+      /*height: 100%;*/
+      position: absolute;
+      /*top: 0;*/
+      /*left: 0;*/
+      }
+
+    .play {
+      left: 20px;
+      top: 10px;
+      z-index: 44;
+      position: absolute;
+      }
+
+    .stop {
+      left: 90px;
+      top: 10px;
+      z-index: 44;
+      position: absolute;
+      }
+  </style>
+</head>
+<body>
+<canvas id="example" width="800px" height="800px">
+</canvas>
+
+<button class="play">PLAY</button>
+<button class="stop">STOP</button>
+
+<script src="bundle.js"></script>
+
+</body>
+</html>
